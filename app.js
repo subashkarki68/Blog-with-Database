@@ -52,12 +52,11 @@ app.get('/posts/:postName', function (req, res) {
 
     if (requestedTitle === existingTitle) {
       console.log('Match Found');
+
       res.render('post',{
         postTitle: post.title,
         postBody: post.body
       });
-    } else {
-      res.render('404');
     }
   });
 });

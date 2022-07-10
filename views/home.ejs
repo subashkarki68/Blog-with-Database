@@ -5,8 +5,7 @@
 
 <% posts.forEach(function(post){ %>
     <h1><%= post.title %></h1>
-    <% let postTitleToURL = (post.title) %>
-    <p><%= post.body.substring(0,100) %>... <a href="/posts/<%= postTitleToURL %>">Read More</a></p>
+    <p><%= post.body.substring(0,100) %>... <a href="/posts/<%= post._id %>">Read More</a></p>
     
 <% }); %>
 
